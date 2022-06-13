@@ -30,7 +30,8 @@ var dbConn *sql.DB
 
 func initDB() (err error) {
 
-	dsn := "root:huangzhen123@tcp(175.178.106.176:3306)/Publish?charset=utf8mb4"
+	//xxxxxx is password
+	dsn := "root:xxxxxx@tcp(175.178.106.176:3306)/Publish?charset=utf8mb4"
 	// open函数只是验证格式是否正确，并不是创建数据库连接
 	dbConn, err = sql.Open("mysql", dsn)
 	if err != nil {
